@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Us 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating Hearts / Petals -->
+<div class="floating">
+  <span>💖</span><span>🌸</span><span>💗</span><span>🌹</span><span>💞</span>
+</div>
+
+<div class="story-wrapper">
+  <div class="progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="card active">
+      <h1>Hey you 💕</h1>
+      <p>I made something small for our next meet…</p>
+      <button onclick="next()">Start 💌</button>
+    </div>
+
+    <!-- Name Confirm Card -->
+    <div class="card">
+      <h2>Just to be sure 💖</h2>
+      <p>Confirm it’s you</p>
+      <input id="userName" placeholder="Enter your name 🌸">
+      <button onclick="saveName()">Continue →</button>
+    </div>
+
+    <!-- Q1 -->
+    <div class="card">
+      <h2>What should I bring when we meet? 🌹</h2>
+      <div class="options">
+        <button onclick="selectAnswer(1,'Flowers 🌸')">Flowers 🌸</button>
+        <button onclick="selectAnswer(1,'Chocolate 🍫')">Chocolate 🍫</button>
+        <button onclick="selectAnswer(1,'Just You 🤍')">Just You 🤍</button>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="card">
+      <h2>What food are you craving? 😋</h2>
+      <div class="options">
+        <button onclick="selectAnswer(2,'Pizza 🍕')">Pizza 🍕</button>
+        <button onclick="selectAnswer(2,'Ice Cream 🍦')">Ice Cream 🍦</button>
+        <button onclick="selectAnswer(2,'Street Food 🌮')">Street Food 🌮</button>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="card">
+      <h2>How long should we spend together? ⏳</h2>
+      <div class="options">
+        <button onclick="selectAnswer(3,'Few hours')">Few hours</button>
+        <button onclick="selectAnswer(3,'Whole day')">Whole day</button>
+        <button onclick="selectAnswer(3,'Never enough 🥺')">Never enough 🥺</button>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="card">
+      <h2>Your mood right now? 💫</h2>
+      <div class="options">
+        <button onclick="selectAnswer(4,'Missing you 🥺')">Missing you 🥺</button>
+        <button onclick="selectAnswer(4,'Happy 😊')">Happy 😊</button>
+        <button onclick="selectAnswer(4,'Excited 💖')">Excited 💖</button>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="card">
+      <h2>One word for me? 💌</h2>
+      <div class="options">
+        <button onclick="finish('Love ❤️')">Love ❤️</button>
+        <button onclick="finish('Mine 🫶')">Mine 🫶</button>
+        <button onclick="finish('Forever ♾️')">Forever ♾️</button>
+      </div>
+    </div>
+
+    <!-- End -->
+    <div class="card">
+      <h1>That’s all 🥺❤️</h1>
+      <p>Thank you <span id="finalName">💖</span></p>
+
+      <button class="share-btn" onclick="shareLove()">Share this 💌</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
