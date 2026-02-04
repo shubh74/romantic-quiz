@@ -1,7 +1,7 @@
 window.onload = function () {
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyAM80Iw2hbag0QO78hQ4tQ2ubsCWEl3m8g",
+    apiKey: "ae199d6b-dd06-4ce3-a1d7-23d720ad9ef8",
     authDomain: "week-7496d.firebaseapp.com",
     projectId: "week-7496d",
     storageBucket: "week-7496d.firebasestorage.app",
@@ -79,3 +79,4 @@ window.onload = function () {
     }
   };
 };
+
