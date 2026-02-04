@@ -34,7 +34,7 @@ Built to be shared, smiled at, and remembered.
 ## 🚀 How to Run
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/romantic-quiz.git
+   git clone https://github.com/shubh74/romantic-quiz.git
 Open the project folder
 
 Add your Firebase config in app.js
